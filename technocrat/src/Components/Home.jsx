@@ -1,49 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+import { Link } from "react-router-dom";
 
-<head>
-  <meta charset="utf-8" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-
-  <title>Technocrat Staffing</title>
-
-  <link rel="stylesheet" href="Assets/Css/Style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-
-<body>
- 
-
-  <div class="Root">
-    <!-- ---------------header contain--------------- -->
+function Home() {
+    return (
+        <>
+        
+    {/* <!-- ---------------header contain--------------- --> */}
     <div class="header">
         <div class="conatiner">
             <nav>
-                <a href="index.html">
-                    <img src="images/logo.jpg" width="70px" height="70px" href="/index.html">
-                </a>
+                <Link to="/Home">
+                    <img src="images/logo.jpg" width="70px" height="70px" to="/index.html"/>
+                </Link>
                 <h1> TECHNOCRAT</h1>
                 <ul id="sidemenu">
                     <i class="fa fa-times" onclick="closemenu()"></i>
 
-                    <li><a href="/src/Components/About.jsx">ABOUT US </a><span><b>+</b></span></li>
-                    <li><a href="/src/Components/Expertise.jsx">EXPERTISE</a><span><b>+</b></span></li>
-                    <li><a href="/src/Components/Solutions.jsx">SOLUTIONS</a><span><b>+</b></span></li>
-                    <li><a href="/src/Components/ThoughtCenter.jsx">THOUGHT CENTER</a><span><b>+</b></span></li>
-                    <li><a href="/src/Components/Contact.jsx">CONTACT US</a><span><b>+</b></span></li>
-                    <li><a href="/src/Components/Joinus.jsx">JOIN US</a><span><b>+</b></span></li>
+                    <li><Link to="/src/Components/About.jsx">ABOUT US </Link><span><b>+</b></span></li>
+                    <li><Link to="/src/Components/Expertise.jsx">EXPERTISE</Link><span><b>+</b></span></li>
+                    <li><Link to="/src/Components/Solutions.jsx">SOLUTIONS</Link><span><b>+</b></span></li>
+                    <li><Link to="/src/Components/ThoughtCenter.jsx">THOUGHT CENTER</Link><span><b>+</b></span></li>
+                    <li><Link to="/src/Components/Contact.jsx">CONTACT US</Link><span><b>+</b></span></li>
+                    <li><Link to="/src/Components/Joinus.jsx">JOIN US</Link><span><b>+</b></span></li>
                 </ul>
                 <i class="fa fa-bars" onclick="openmenu()"></i>
             </nav>
         </div>
         <div class="container-2">
-            <!-- <div class="container-col-1">
+            {/* <!-- <div class="container-col-1">
             <img src="images/background2.jpg">
-        </div> -->
+        </div> --> */}
             <div class="container-col-2">
                 <p>We make dreams career happen</p>
                 <p>We make great team happen</p>
@@ -53,32 +39,32 @@
 
         </div>
     </div>
-    <!-------------------Main contain-------------->
+    {/* <!-------------------Main contain--------------> */}
     <div class="main-contain ">
-        <!-- -----------row-1---------- -->
+        {/* <!-- -----------row-1---------- --> */}
         <div class="row-1">
             <div class="column-1">
                 <div>
-                    <p>Greetings From Teсhnоcrаt Consulting. <br>
+                    <p>Greetings From Teсhnоcrаt Consulting. <br/>
                         We аre writing in resроnse tо yоur jоb роstings, we hаve seen
                         оn yоur Соmраny's Website. Throughout the yeаrs оf оur
                         exрerienсe, we hаve wоrked аnd reсruited fоr vаriоus
-                        Соmраnies аnd MNСs.<br>
+                        Соmраnies аnd MNСs.<br/>
                         Оur visiоn is tо emerge аs оne оf the mоst resрeсtable HR
                         serviсes соmраnies in the соuntry аnсhоred оn the vаlues оf
                         grоwth, рrоfessiоnаlism, dignity, аnd diversity. In а tight jоb
                         mаrket, effeсtive reсruitment is раrаmоunt. Finding the time аnd
                         the resоurсes tо bring in the best of саndidаtes, thоugh, is
-                        inсredibly сhаllenging.<br>
+                        inсredibly сhаllenging.<br/>
                         We hаve wоrked аnd reсruited а wide rаnge оf Sоftwаre
                         Develорers suсh аs Reасt Js, Nоde Js Аngulаr, Jаvа,
                         Рythоn, SаlesFоrсe, Dаtа sсienсe, FullStack, Software Tester,
-                        Application Developer, Asp.Net, PHP аnd mаny mоre.<br>
+                        Application Developer, Asp.Net, PHP аnd mаny mоre.<br/>
                         Whаt’s gоne, саn’t be сhаnged but whаt is соming is in оur
                         hаnds can surely be. The раndemiс hаd brоught undesirаble
                         соnsequenсes in оur lives, but the соming
                         finаnсiаl yeаr саn be brightened if we fосus оn whаt we
-                        hаve аnd whаt we саn dо.<br>
+                        hаve аnd whаt we саn dо.<br/>
                         Рrорer Рlаnning is the key tо every suссessful business. А
                         vаluаble аnd tаlented wоrking teаm rаises the рeаk оf every
                         millenniаl соmраny. Sо, stаrt hiring the gоlden gems sсаttered
@@ -86,7 +72,7 @@
                         аnd build yоur emрire. </p>
                 </div>
                 <div>
-                     <img src="images/AboutImg/Meeting2.png" width="380px"> 
+                     <img src="images/AboutImg/Meeting2.png" width="380px"/> 
 
                 </div>
             </div>
@@ -114,7 +100,7 @@
 
             </div>
         </div>
-        <!-- -----------row-2---------- -->
+        {/* <!-- -----------row-2---------- --> */}
         <div class="row-2">
             <h1>We make coustomer delight happen</h1>
             <div class="though-center">
@@ -170,11 +156,11 @@
 
 
         </div>
-        <!-- -----------row-3---------- -->
+        {/* <!-- -----------row-3---------- --> */}
         <div class="row-3">
 
         </div>
-        <!-- -----------row-4---------- -->
+        {/* <!-- -----------row-4---------- --> */}
         <div class="row-4">
 
             <h1>We made it happen for them</h1>
@@ -182,44 +168,44 @@
             <div class="row-col-1">
                 <div class="row-col-2">
                     <div class="col-5">
-                        <img src="images/Partners Logo/AccrualifyLogo.png">
+                        <img src="images/Partners Logo/AccrualifyLogo.png"/>
                     </div>
                     <div class="col-5">
-                        <img src="images/Partners Logo/Appcino-Logo.png">
+                        <img src="images/Partners Logo/Appcino-Logo.png"/>
                     </div>
                     <div class="col-5">
-                        <img src="images/Partners Logo/Euphoric ThoughtsLogo.png">
+                        <img src="images/Partners Logo/Euphoric ThoughtsLogo.png"/>
                     </div>
                     <div class="col-5">
-                        <img src="images/Partners Logo/FABLEMasterLogo2022.webp">
+                        <img src="images/Partners Logo/FABLEMasterLogo2022.webp"/>
                     </div>
                     <div class="col-5">
-                        <img src="images/Partners Logo/HSM Edifice logo.jpg">
+                        <img src="images/Partners Logo/HSM Edifice logo.jpg"/>
                     </div>
-                    <!-- </div> -->
-                    <!-- <div class="row-col-2"> -->
+                    {/* <!-- </div> --> */}
+                    {/* <!-- <div class="row-col-2"> --> */}
                     <div class="col-5">
-                        <img src="images/Partners Logo/KloudRAC logo.png">
-                    </div>
-                    <div class="col-5">
-                        <img src="images/Partners Logo/TechAim.png">
+                        <img src="images/Partners Logo/KloudRAC logo.png"/>
                     </div>
                     <div class="col-5">
-                        <img src="images/Partners Logo/Trust Syst & Softlogo.png">
+                        <img src="images/Partners Logo/TechAim.png"/>
                     </div>
                     <div class="col-5">
-                        <img src="images/Partners Logo/UplersLogo.jpg">
+                        <img src="images/Partners Logo/Trust Syst & Softlogo.png"/>
                     </div>
                     <div class="col-5">
-                        <img src="images/Partners Logo/Virtual GalaxyLogo.png">
+                        <img src="images/Partners Logo/UplersLogo.jpg"/>
                     </div>
-                    <!-- </div> -->
+                    <div class="col-5">
+                        <img src="images/Partners Logo/Virtual GalaxyLogo.png"/>
+                    </div>
+                    {/* <!-- </div> --> */}
                 </div>
 
             </div>
 
 
-            <!-- -----------row-5---------- -->
+            {/* <!-- -----------row-5---------- --> */}
             <div class="row-5">
                 <h1 class="sub-title"><i class="fa fa-hand-o-right" width="20px"></i> Thought center</h1>
                 <div class="though-center">
@@ -234,7 +220,7 @@
                             current trends,the design norms and foremostly, the target
                             audience behavior.
                         </p>
-                        <a href="#"></i>View All</a>
+                        <Link to="#">View All</Link>
                     </div>
                     <div>
                         <i class="fa fa-file-text"></i>
@@ -243,14 +229,14 @@
                             whitepapers. Find all the articles and
                             infographics.
                         </p>
-                        <a href="#"></i>View All</a>
+                        <Link to="#">View All</Link>
                     </div>
                     <div>
                         <i class="fa fa-line-chart"></i>
                         <h2>REPORTS</h2>
                         <p>The news, the views, the updates, the press releases, the media coverage, everything.
                             Find out what’s happening at Technocrat.</p>
-                        <a href="#"></i>View All</a>
+                        <Link to="#">View All</Link>
                     </div>
 
                 </div>
@@ -259,81 +245,81 @@
 
         </div>
     </div>    
-        <!-- -------------footer contain----------------->
+        {/* <!-- -------------footer contain-----------------> */}
         <div class="footer ">
             <div class="container">
                 <div class="row">
                     <div class="footer-col-1">
                         <h2> TEСHNОCRАT CONSULTING </h2>
                         <p style="color: blue;"><b>MR. MILIND SALVE</b> </p>
-                        <p>  Mob No</b>:- 8999210639</p>
+                        <p><b>  Mob No</b>:- 8999210639</p>
                         <p style="color: blue;"> <b>  Ms Sachi Waghmare</b> :</p>
                         <p> <b> Mob No</b>:-7276216671</p>
                         <p> <b> Email</b>:-technocratconsulting21@gmail.com</p>
                         <p>Follow-us :-
                         <div class="social-icon">
-                            <a href="#"><i class="fa fa-facebook-official"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <Link to="#"><i class="fa fa-facebook-official"></i></Link>
+                            <Link to="#"><i class="fa fa-instagram"></i></Link>
+                            <Link to="#"><i class="fa fa-youtube-play"></i></Link>
+                            <Link to="#"><i class="fa fa-linkedin"></i></Link>
                         </div>
                         </p>
                     </div>
                     <div class="footer-col-2">
-                        <a href="#" class="links">About Us</a>
+                        <Link to="#" class="links">About Us</Link>
                         <ul>
-                            <li><a href="#">Overview</a></li>
-                            <li><a href="#">Why Technocrat</a></li>
-                            <li><a href="#">Our Journey</a></li>
-                            <li><a href="#">Leadership</a></li>
-                            <li><a href="#">Location</a></li>
+                            <li><Link to="#">Overview</Link></li>
+                            <li><Link to="#">Why Technocrat</Link></li>
+                            <li><Link to="#">Our Journey</Link></li>
+                            <li><Link to="#">Leadership</Link></li>
+                            <li><Link to="#">Location</Link></li>
                         </ul>
                     </div>
                     <div class="footer-col-3">
-                        <a href="#" class="links">Expertise</a>
+                        <Link to="#" class="links">Expertise</Link>
                         <ul>
-                            <li><a href="#">Overview</a></li>
-                            <li><a href="#">Why Technocrat</a></li>
-                            <li><a href="#">Our Journey</a></li>
-                            <li><a href="#">Leadership</a></li>
-                            <li><a href="#">Location</a></li>
+                            <li><Link to="#">Overview</Link></li>
+                            <li><Link to="#">Why Technocrat</Link></li>
+                            <li><Link to="#">Our Journey</Link></li>
+                            <li><Link to="#">Leadership</Link></li>
+                            <li><Link to="#">Location</Link></li>
                         </ul>
                     </div>
                     <div class="footer-col-4">
-                        <a href="#" class="links">Solutions</a>
+                        <Link to="#" class="links">Solutions</Link>
                         <ul>
-                            <li><a href="#">Overview</a></li>
-                            <li><a href="#">Why Technocrat</a></li>
-                            <li><a href="#">Our Journey</a></li>
-                            <li><a href="#">Leadership</a></li>
-                            <li><a href="#">Location</a></li>
+                            <li><Link to="#">Overview</Link></li>
+                            <li><Link to="#">Why Technocrat</Link></li>
+                            <li><Link to="#">Our Journey</Link></li>
+                            <li><Link to="#">Leadership</Link></li>
+                            <li><Link to="#">Location</Link></li>
                         </ul>
                     </div>
                     <div class="footer-col-4">
-                        <a href="#" class="links">Though Center</a>
+                        <Link to="#" class="links">Though Center</Link>
 
                     </div>
                     <div class="footer-col-4">
-                        <a href="#" class="links">Contact Us</a>
+                        <Link to="#" class="links">Contact Us</Link>
 
                     </div>
                     <div class="footer-col-4">
-                        <a href="#" class="links">Join Us</a>
+                        <Link to="#" class="links">Join Us</Link>
 
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ----------copyright-------------------- -->
+        {/* <!-- ----------copyright-------------------- --> */}
         <div class="copyright">
             <div class="useful-links">
-                <a href="#">About</a>
-                <a href="#">Accessibility</a>
-                <a href="#">Help Center</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Advertising</a>
-                <a href="#">Get the App</a>
-                <a href="#">More</a>
+                <Link to="#">About</Link>
+                <Link to="#">Accessibility</Link>
+                <Link to="#">Help Center</Link>
+                <Link to="#">Privacy Policy</Link>
+                <Link to="#">Advertising</Link>
+                <Link to="#">Get the App</Link>
+                <Link to="#">More</Link>
             </div>
             <div class="copyright-msg">
                 <p>technocratconsulting &#169; 2021.All right reserved</p>
@@ -346,30 +332,8 @@
 
 
 
-    <!-- ----------js for menu---------------- -->
-    <!-- <script>
-        var sm = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sm.style.right = "0";
-        }
-        function closemenu() {
-            sm.style.right = "-200px";
-        }
-    </script> -->
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-</body>
-<!-- ----------javascript---------------- -->
-<script src="Assets/Javascripit/index.js"></script>
-
-</html>
+   
+        </>
+    )
+}
+export default Home;
