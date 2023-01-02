@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { a } from "react-router-dom";
 
 
 function About() {
@@ -8,39 +8,39 @@ function About() {
         <>
 
             {/* <!-- ---------------header contain--------------- --> */}
-            <div class="header">
-                <div class="conatiner">
+            <div className="header">
+                {/* <div className="conatiner">
                     <nav>
-                        <Link to="index.html">
-                            <img src="images/logo.jpg" width="70px" height="70px" href="/index.html" />
-                        </Link>
+                        <a to="/">
+                            <img src="public/images/logo.jpg" width="70px" height="70px" to="/Home" />
+                        </a>
                         <h1> TECHNOCRAT</h1>
                         <ul id="sidemenu">
-                            <i class="fa fa-times" onclick="closemenu()"></i>
+                            <i className="fa fa-times" onclick="closemenu()"></i>
 
-                            <li><Link to="/src/Components/About.jsx">ABOUT US </Link><span><b>+</b></span></li>
-                            <li><Link to="/src/Components/Expertise.jsx">EXPERTISE</Link><span><b>+</b></span></li>
-                            <li><Link to="/src/Components/Solutions.jsx">SOLUTIONS</Link><span><b>+</b></span></li>
-                            <li><Link to="/src/Components/ThoughtCenter.jsx">THOUGHT CENTER</Link><span><b>+</b></span></li>
-                            <li><Link to="/src/Components/Contact.jsx">CONTACT US</Link><span><b>+</b></span></li>
-                            <li><Link to="/src/Components/Joinus.jsx">JOIN US</Link><span><b>+</b></span></li>
+                            <li><a to="/About">ABOUT US </a><span><b>+</b></span></li>
+                            <li><a to="/Expertise">EXPERTISE</a><span><b>+</b></span></li>
+                            <li><a to="/Solutions">SOLUTIONS</a><span><b>+</b></span></li>
+                            <li><a to="/ThoughtCenter">THOUGHT CENTER</a><span><b>+</b></span></li>
+                            <li><a to="/Contact">CONTACT US</a><span><b>+</b></span></li>
+                            <li><a to="/Joinus">JOIN US</a><span><b>+</b></span></li>
                         </ul>
-                        <i class="fa fa-bars" onclick="openmenu()"></i>
+                        <i className="fa fa-bars" onclick="openmenu()"></i>
                     </nav>
-                </div>
-                <div class="container-3">
+                </div> */}
+                <div className="container-3">
                     <h1>Making bussiness growth</h1>
                 </div>
             </div>
             {/* <!-- ---------main contain---------------- --> */}
-            <div class="main-contain">
-                <div class="row-1">
-                    <div class="column-1">
-                        <div class="col-div-1">
-                            <img src="images/AboutImg/Meeting.png" />
+            <div className="main-contain">
+                <div className="row-1">
+                    <div className="column-1">
+                        <div className="col-div-1">
+                            <img src="public/images/AboutImg/Meeting.png" />
                             {/* <!-- <img src="images/AboutImg/Meeting2.png"> --> */}
                         </div>
-                        <div class="col-div-2">
+                        <div className="col-div-2">
                             <p>We are Technocrat<br />
 
                                 We аll аre living in аn erа where the evоlutiоn оf
@@ -101,11 +101,11 @@ function About() {
                     </div>
 
                 </div>
-                <div class="row-2">
-                    <h1>How do we make it happen<i class="fa fa-question"></i></h1>
-                    <div class="column">
-                        <div class="col-1">
-                            <i class="fa fa-commenting"></i>
+                <div className="row-2">
+                    <h1>How do we make it happen<i className="fa fa-question"></i></h1>
+                    <div className="column">
+                        <div className="col-1">
+                            <i className="fa fa-commenting"></i>
                             <h2>CONSULT</h2>
                             <ul>
                                 <li>Industry Benchmarking</li>
@@ -115,8 +115,8 @@ function About() {
                                 <li> Compensation Benchmarking</li>
                             </ul>
                         </div>
-                        <div class="col-1">
-                            <i class="fa fa-globe"></i>
+                        <div className="col-1">
+                            <i className="fa fa-globe"></i>
                             <h2>ACCESS</h2>
                             <ul>
                                 <li>Talent Landscape</li>
@@ -127,8 +127,8 @@ function About() {
                             </ul>
                         </div>
 
-                        <div class="col-1">
-                            <i class="fa fa-search"></i>
+                        <div className="col-1">
+                            <i className="fa fa-search"></i>
                             <h2>ACCESS</h2>
                             <ul>
                                 <li>Assessment Development</li>
@@ -138,8 +138,8 @@ function About() {
                                 <li>Interview Services </li>
                             </ul>
                         </div>
-                        <div class="col-1">
-                            <i class="fa fa-check"></i>
+                        <div className="col-1">
+                            <i className="fa fa-check"></i>
                             <h2>SELECT</h2>
                             <ul>
                                 <li>Application Management</li>
@@ -150,8 +150,8 @@ function About() {
                             </ul>
                         </div>
 
-                        <div class="col-1">
-                            <i class="fa fa-handshake-o"></i>
+                        <div className="col-1">
+                            <i className="fa fa-handshake-o"></i>
                             <h2>ONBOARD</h2>
                             <ul>
                                 <li>Offer Management</li>
@@ -163,14 +163,14 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div class="row-3">
+                <div className="row-3">
                     <h1>Making great teams happen</h1>
-                    <div class="col-3">
-                        <div class="row-col-3">
-                            <div class="imgs">
-                                <img src="images/AboutImg/Aquisition.png" />
+                    <div className="col-3">
+                        <div className="row-col-3">
+                            <div className="imgs">
+                                <img src="public/images/AboutImg/Aquisition.png" />
                             </div>
-                            <div class="content">
+                            <div className="content">
                                 <h2> Innovation in talent acquisition</h2>
                                 <p>Since 1999, we have seen the evolution of talent acquisition in the country
                                     and transformed ourselves with the changing recruitment dynamics. That has
@@ -178,13 +178,13 @@ function About() {
                                 </p>
                             </div>
                         </div>
-                        <div class="row-col-4">
-                            <div class="imgs">
-                                <img src="images/AboutImg/Net of High Quality Prof.png" />
+                        <div className="row-col-4">
+                            <div className="imgs">
+                                <img src="public/images/AboutImg/Net of High Quality Prof.png" />
                             </div>
-                            <div class="content">
+                            <div className="content">
                                 <h2>Network of high quality professionals</h2>
-                                <p>Our world-class recruitment service platform makes it easy for us to nurture
+                                <p>Our world-className recruitment service platform makes it easy for us to nurture
                                     relationships with over 5 million candidates and 2,000+ institutions spanning
                                     100+ locations pan-India. Our extensive talent network covers candidates across
                                     various specialties, domains, and levels.
@@ -192,12 +192,12 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="row-col-3">
-                            <div class="imgs">
-                                <img src="images/AboutImg/Meeting the talent.png" />
+                    <div className="col-3">
+                        <div className="row-col-3">
+                            <div className="imgs">
+                                <img src="public/images/AboutImg/Meeting the talent.png" />
                             </div>
-                            <div class="content">
+                            <div className="content">
                                 <h2>Meeting the talent needs of all industries</h2>
                                 <p>Over these years, we have partnered with businesses of different sizes and nature,
                                     from brick and mortar organisations to new-age startups. From finding the right
@@ -206,11 +206,11 @@ function About() {
                                 </p>
                             </div>
                         </div>
-                        <div class="row-col-4">
-                            <div class="imgs">
-                                <img src="images/AboutImg/Trusted by.png" />
+                        <div className="row-col-4">
+                            <div className="imgs">
+                                <img src="public/images/AboutImg/Trusted by.png" />
                             </div>
-                            <div class="content">
+                            <div className="content">
                                 <h2>Trusted by leading enterprises</h2>
                                 <p>Our team comprises 2,000+ highly motivated professionals with 58% diversity and 20%
                                     tenured team with 5+ years of continued success. We have helped 1,000+ enterprise
@@ -219,12 +219,12 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="row-col-3">
-                            <div class="imgs">
-                                <img src="images/AboutImg/Driving Digitization.png" />
+                    <div className="col-3">
+                        <div className="row-col-3">
+                            <div className="imgs">
+                                <img src="public/images/AboutImg/Driving Digitization.png" />
                             </div>
-                            <div class="content">
+                            <div className="content">
                                 <h2>Driving digitisation across verticals</h2>
                                 <p>We have been able to convert over 1M+ digitised transactions across processes like campus
                                     assessments and onboarding. Currently, we are administering over 1 million assessments
@@ -232,11 +232,11 @@ function About() {
                                 </p>
                             </div>
                         </div>
-                        <div class="row-col-4">
-                            <div class="imgs">
-                                <img src="images/AboutImg/Scalingup RPO.png" />
+                        <div className="row-col-4">
+                            <div className="imgs">
+                                <img src="public/images/AboutImg/Scalingup RPO.png" />
                             </div>
-                            <div class="content">
+                            <div className="content">
                                 <h2>Scaling up RPOs and turnkey engagements</h2>
                                 <p>We have successfully onboarded more than 100+ RPO engagements, scaling from 200 to
                                     5,000 every year.
@@ -249,29 +249,11 @@ function About() {
             {/* </div> */}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             {/* <!-- -------------footer contain-----------------> */}
-            <div class="footer ">
-                <div class="container">
-                    <div class="row">
-                        <div class="footer-col-1">
+            <div className="footer ">
+                <div className="container">
+                    <div className="row">
+                        <div className="footer-col-1">
                             <h2>TEСHNОCRАT CONSULTING </h2>
                             <p style="color: blue;"><b>MR. MILIND SALVE</b> </p>
                             <p><b> Mob No</b>:- 8999210639</p>
@@ -279,71 +261,71 @@ function About() {
                             <p> <b> Mob No</b>:-7276216671</p>
                             <p> <b> Email</b>:-technocratconsulting21@gmail.com</p>
                             <p>Follow-us :-
-                                <div class="social-icon">
-                                    <Link to="#"><i class="fa fa-facebook-official"></i></Link>
-                                    <Link to="#"><i class="fa fa-instagram"></i></Link>
-                                    <Link to="#"><i class="fa fa-youtube-play"></i></Link>
-                                    <Link to="#"><i class="fa fa-linkedin"></i></Link>
+                                <div className="social-icon">
+                                    <a to="#"><i className="fa fa-facebook-official"></i></a>
+                                    <a to="#"><i className="fa fa-instagram"></i></a>
+                                    <a to="#"><i className="fa fa-youtube-play"></i></a>
+                                    <a to="#"><i className="fa fa-linkedin"></i></a>
                                 </div>
                             </p>
                         </div>
-                        <div class="footer-col-2">
-                            <Link to="#" class="links">About Us</Link>
+                        <div className="footer-col-2">
+                            <a to="#" className="links">About Us</a>
                             <ul>
-                                <li><Link to="#">Overview</Link></li>
-                                <li><Link to="#">Why Technocrat</Link></li>
-                                <li><Link to="#">Our Journey</Link></li>
-                                <li><Link to="#">Leadership</Link></li>
-                                <li><Link to="#">Location</Link></li>
+                                <li><a to="#">Overview</a></li>
+                                <li><a to="#">Why Technocrat</a></li>
+                                <li><a to="#">Our Journey</a></li>
+                                <li><a to="#">Leadership</a></li>
+                                <li><a to="#">Location</a></li>
                             </ul>
                         </div>
-                        <div class="footer-col-3">
-                            <Link to="#" class="links">Expertise</Link>
+                        <div className="footer-col-3">
+                            <a to="#" className="links">Expertise</a>
                             <ul>
-                                <li><Link to="#">Overview</Link></li>
-                                <li><Link to="#">Why Technocrat</Link></li>
-                                <li><Link to="#">Our Journey</Link></li>
-                                <li><Link to="#">Leadership</Link></li>
-                                <li><Link to="#">Location</Link></li>
+                                <li><a to="#">Overview</a></li>
+                                <li><a to="#">Why Technocrat</a></li>
+                                <li><a to="#">Our Journey</a></li>
+                                <li><a to="#">Leadership</a></li>
+                                <li><a to="#">Location</a></li>
                             </ul>
                         </div>
-                        <div class="footer-col-4">
-                            <Link to="#" class="links">Solutions</Link>
+                        <div className="footer-col-4">
+                            <a to="#" className="links">Solutions</a>
                             <ul>
-                                <li><Link to="#">Overview</Link></li>
-                                <li><Link to="#">Why Technocrat</Link></li>
-                                <li><Link to="#">Our Journey</Link></li>
-                                <li><Link to="#">Leadership</Link></li>
-                                <li><Link to="#">Location</Link></li>
+                                <li><a to="#">Overview</a></li>
+                                <li><a to="#">Why Technocrat</a></li>
+                                <li><a to="#">Our Journey</a></li>
+                                <li><a to="#">Leadership</a></li>
+                                <li><a to="#">Location</a></li>
                             </ul>
                         </div>
-                        <div class="footer-col-4">
-                            <Link to="#" class="links">Though Center</Link>
+                        <div className="footer-col-4">
+                            <a to="#" className="links">Though Center</a>
 
                         </div>
-                        <div class="footer-col-4">
-                            <Link to="#" class="links">Contact Us</Link>
+                        <div className="footer-col-4">
+                            <a to="#" className="links">Contact Us</a>
 
                         </div>
-                        <div class="footer-col-4">
-                            <Link to="#" class="links">Join Us</Link>
+                        <div className="footer-col-4">
+                            <a to="#" className="links">Join Us</a>
 
                         </div>
                     </div>
                 </div>
             </div>
             {/* <!-- ----------copyright-------------------- --> */}
-            <div class="copyright">
-                <div class="useful-links">
-                    <Link to="#">About</Link>
-                    <Link to="#">Accessibility</Link>
-                    <Link to="#">Help Center</Link>
-                    <Link to="#">Privacy Policy</Link>
-                    <Link to="#">Advertising</Link>
-                    <Link to="#">Get the App</Link>
-                    <Link to="#">More</Link>
+            <div className="copyright">
+                <div className="useful-as">
+                    <a to="#">About</a>
+                    <a to="#">Accessibility</a>
+                    <a to="#">Help Center</a>
+                    <a to="#">Privacy Policy</a>
+                    <a to="#">Advertising</a>
+                    <a to="#">Get the App</a>
+                    <a to="#">More</a>
                 </div>
-                <div class="copyright-msg">
+                <div className="copyright-msg">
                     <p>technocratconsulting &#169; 2021.All right reserved</p>
 
                 </div>
@@ -370,7 +352,7 @@ function About() {
 
 
         </>
-    )
-}
+    );
+};
 
-export default About();
+export default About;
