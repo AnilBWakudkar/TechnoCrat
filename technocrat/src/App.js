@@ -5,7 +5,7 @@ import Solutions from  "./Components/Solutions";
 import ThoughtCenter from "./Components/ThoughtCenter";
 import Contact from "./Components/Contact";
 import Joinus from "./Components/Joinus";
-import{Routes,Route} from "react-router-dom"; 
+import{Route, Switch} from "react-router-dom"; 
 import  Style from './Components/';
 
 function App() {
@@ -13,14 +13,19 @@ function App() {
     <div className="App">
       
       <Home/>
-      <Routes>
-      <Route path="/" exact element={<Home/>} />
-      <Route path="/about"  element={<About/>} />
+      <Switch>
+      <Route path="/" exact component={<Home/>} />
+      <Route path="/about"  component={<About/>} />
+      <Route path="/expertise"  component={<Expertise/>} />
+      <Route path="/solutions"  component={<Solutions/>} />
+      <Route path="/thoughtcenter"  component={<ThoughtCenter/>} />
+      <Route path="/contact"  component={<Contact/>} />
+      <Route path="/joinus"  component={<Joinus/>} />
 
 
 
 
-      </Routes>
+      </Switch>
     </div>
   );
 }
