@@ -30,26 +30,10 @@ const Expertise=()=>{
         </div>
     </div>
     {/* <!-- ---------main contain---------------- --> */}
-    <div className="main-contain"></div>
+    <div className="main-contain">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
     {/* <!-- -------------footer contain-----------------> */}
     <div className="footer ">
